@@ -25,7 +25,6 @@ namespace light {
             const img = this.image;
             const w = img.width;
             const h = img.height;
-            const start = control.millis();
 
             let x = 0;
             return () => {

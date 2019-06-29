@@ -4,6 +4,7 @@
     "description": "",
     "dependencies": {
         "device": "*",
+        "screen": "*",
         "light": "*"
     },
     "files": [

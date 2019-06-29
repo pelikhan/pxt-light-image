@@ -1,21 +1,24 @@
-# pxt-light-image
+# light-image
 
+Animate light strip using an image; where every column is an animation frame.
 
+## Examples
 
-## TODO
+Display a gradient in a loop.
 
-- [ ] Add a reference for your blocks here
-- [ ] Add "icon.png" image (300x200) in the root folder
-- [ ] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
-- [ ] Use "pxt bump" to create a tagged release on GitHub
-- [ ] On GitHub, create a new file named LICENSE. Select the MIT License template.
-- [ ] Get your package reviewed and approved https://arcade.makecode.com/extensions/approval
-
-Read more at https://arcade.makecode.com/extensions
+```blocks
+game.onUpdate(function () {
+    light.showAnimationFromImage(img`
+        3 3 8 a a
+        5 3 3 8 a
+        5 5 3 3 8
+        7 5 5 3 3
+        7 7 5 5 3
+    `, 500)
+})
+```
 
 ## Supported targets
 
 * for PXT/arcade
 (The metadata above is needed for package search.)
-
