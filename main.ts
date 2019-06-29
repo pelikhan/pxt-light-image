@@ -32,9 +32,9 @@ namespace light {
                 for (let i = 0; i < n; i++) {
                     const y = i * h / (n - 1);
                     const ly = Math.floor(y);
+                    const ly1 = (ly + 1) % h;
                     const dy = y - ly;
                     const ody = 1 - dy;
-                    const ly1 = (ly + 1) % h;
 
                     // compute interpolated color
                     let c = ody * img.getPixel(x, ly) + dy * img.getPixel(x, ly1);
